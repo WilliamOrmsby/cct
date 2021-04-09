@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Will's Wonderful Website</title>
+    <style>
+      body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+  display: block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px
+
+}
+
+.backgroundbar {
+  background-color: #97CAEF;
+}
+
+ul {
+  background-color: #97CAEF;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li a:hover:not(.active) {
+  background-color: #CAFAFE;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+  background-color: #FC4445;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center 2s ease-out both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tcon {
+  display: flex;
+  margin: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.h1title {
+  float: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0px rgba(174,171,171,0.65);
+  margin: 0px;
+}
+
+.timg{
+  float: left;
+}
+
+p {
+  text-align: center;
+  margin: 2% 2%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate-center 700ms ease-in-out infinite both;
+}
+.gist{
+  max-width: 400;
+  overflow: auto;
+}
+
+.gist .blob-wrapper.data {
+   max-height: 300;
+   overflow: auto;
+}
+
+.gistContainer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerContainer {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainer.bannerText {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.labContainer {
+  margin-top: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lab1 {
+  float: right;
+  margin: 0;
+  max-width: 100;
+}
+
+.lab2 {
+  float: left;
+  margin: 0;
+  max-width: 100;
+}
+
+.bannerContainerL {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainerL.bannerTextL {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.carousel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href='home.html'>Home</a></li>
+      <li><a href='c.html'>C</a></li>
+      <li><a href='arrays.html'>Arrays</a></li>
+      <li><a href='algorithms.html' class="active">Algorithms</a></li>
+      <li><a href='memory.html'>Memory</a></li>
+    </ul>
+
+    <h1 class="h1title">Lesson 3: Algorithms</h1>
+    <div class="bannerContainerL"><h3 class="bannerContainerL bannerTextL">Selection and Insertion Sort labs</h3></div>
+    <div class="labContainer">
+      <div class="lab1"><script src="https://gist.github.com/WilliamOrmsby/8f2703a1efdffeaf346ec050adb4fb88.js"></script></div>
+      <div class="lab2"><script src="https://gist.github.com/WilliamOrmsby/7c8fb671c44f20be7ca219cfd4d86778.js"></script></div>
+    </div>
+
+    <p>This whole lesson was one of the toughest, but most rewarding. Selection and Insertion sort both seem dauting<br>
+      atleast for me, but after a while you become more familiar with these algorithms, and learn to implement them easily.<br>
+    The labs for this lesson were great, the problem on the other hand....</p>
+
+    <div class="bannerContainer"><h3 class="bannerContainer bannerText">Pset3: Runoff</h3></div>
+    <div class="gistContainer"><script src="https://gist.github.com/WilliamOrmsby/bd5a7b4d6868b03506b821e4d446fe2f.js"></script></div>
+
+    <p>This problem was the most annoying one to do by far. There is a large amount of pre done code you must understand <br>
+      then modify. This problem was the most tedious to do because of the amount of functions you must make, and more specifically, the amount of damn for loops you must <br>make! I would still do this problem again though as it helped me better my skills handling arrays, and implementing algorithms.</p>
+
+    <p>Here are my lesson 3 labs!</p>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <script src="https://gist.github.com/WilliamOrmsby/98493f065b8b3800f9e4f6cef771b0c7.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/5499cc1bcb22654a01a968ec779f706b.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/ead54594e05a64e5371e5124bd0cc679.js"></script>
+        </div>
+        <div class="carousel-item">
+        <script src="https://gist.github.com/WilliamOrmsby/b7b426c352f410e25ca1e98b1a345c60.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

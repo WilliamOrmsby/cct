@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Will's Wonderful Website</title>
+    <style>
+      body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+  display: block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px
+
+}
+
+.backgroundbar {
+  background-color: #97CAEF;
+}
+
+ul {
+  background-color: #97CAEF;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li a:hover:not(.active) {
+  background-color: #CAFAFE;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+  background-color: #FC4445;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center 2s ease-out both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tcon {
+  display: flex;
+  margin: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.h1title {
+  float: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0px rgba(174,171,171,0.65);
+  margin: 0px;
+}
+
+.timg{
+  float: left;
+}
+
+p {
+  text-align: center;
+  margin: 2% 2%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate-center 700ms ease-in-out infinite both;
+}
+.gist{
+  max-width: 400;
+  overflow: auto;
+}
+
+.gist .blob-wrapper.data {
+   max-height: 300;
+   overflow: auto;
+}
+
+.gistContainer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerContainer {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainer.bannerText {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.labContainer {
+  margin-top: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lab1 {
+  float: right;
+  margin: 0;
+  max-width: 100;
+}
+
+.lab2 {
+  float: left;
+  margin: 0;
+  max-width: 100;
+}
+
+.bannerContainerL {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainerL.bannerTextL {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.carousel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href='home.html'>Home</a></li>
+      <li><a href='c.html'>C</a></li>
+      <li><a href='arrays.html'>Arrays</a></li>
+      <li><a href='algorithms.html'>Algorithms</a></li>
+      <li><a href='memory.html' class="active" >Memory</a></li>
+    </ul>
+
+        <h1 class="h1title">Lesson 4: Memory</h1>
+    <div class="bannerContainerL"><h3 class="bannerContainerL bannerTextL">Merger Sort and Pointer labs</h3></div>
+    <div class="labContainer">
+      <div class="lab1"><script src="https://gist.github.com/WilliamOrmsby/5f8441a8e57edc870a45453b5b4256d9.js"></script></div>
+      <div class="lab2"><script src="https://gist.github.com/WilliamOrmsby/14a9c45ca8dc307c941e2e3a672b334b.js"></script></div>
+    </div>
+
+    <p>These two labs were hard but fun. I have little to no experience with pointers due to me mostly using python prior to the course, <br>
+      so learning a new skill is always fun! The mergesort was also nice to do as it helped me understand recursion better, and how recursion might make <br>
+    programs more efficient and elegant.</p>
+
+    <div class="bannerContainer"><h3 class="bannerContainer bannerText">Pset4: Filters</h3></div>
+    <div class="gistContainer"><script src="https://gist.github.com/WilliamOrmsby/7c350b80a83ebda052a2b3645e30a70a.js"></script></div>
+
+    <p>This problem was my favourite. The coding wasnt especially hard, or complex, but the end product is neat. <br>
+      I have never done image processing with a program before and this was a perfect introduction. </p>
+
+    <p>Here are my lesson 4 labs!</p>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <script src="https://gist.github.com/WilliamOrmsby/9dbbccefe4d7c1698c314567efba98db.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/423dbdb20439f293dbd3affe05a8c5f9.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/3d801229159472c68ce887aebfeafde6.js"></script>
+        </div>
+        <div class="carousel-item">
+        <script src="https://gist.github.com/WilliamOrmsby/732afb83223cd2f6cd7ee00209cce742.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/fbf347b01ead59f048bcdf38227e0062.js"></script>
+        </div>
+        <div class="carousel-item">
+          <script src="https://gist.github.com/WilliamOrmsby/17d0df2230802637b883d7574595ba00.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

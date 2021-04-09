@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Will's Wonderful Website</title>
+    <style>
+      body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+  display: block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px
+
+}
+
+.backgroundbar {
+  background-color: #97CAEF;
+}
+
+ul {
+  background-color: #97CAEF;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li a:hover:not(.active) {
+  background-color: #CAFAFE;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: none;
+  background-color: #FC4445;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center 2s ease-out both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tcon {
+  display: flex;
+  margin: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.h1title {
+  float: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0px rgba(174,171,171,0.65);
+  margin: 0px;
+}
+
+.timg{
+  float: left;
+}
+
+p {
+  text-align: center;
+  margin: 2% 2%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate-center 700ms ease-in-out infinite both;
+}
+.gist{
+  max-width: 400;
+  overflow: auto;
+}
+
+.gist .blob-wrapper.data {
+   max-height: 300;
+   overflow: auto;
+}
+
+.gistContainer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerContainer {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainer.bannerText {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.labContainer {
+  margin-top: 0;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lab1 {
+  float: right;
+  margin: 0;
+  max-width: 100;
+}
+
+.lab2 {
+  float: left;
+  margin: 0;
+  max-width: 100;
+}
+
+.bannerContainerL {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 0;
+  background-color: #97CAEF;
+  width: 50%;
+
+}
+
+.bannerContainerL.bannerTextL {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.carousel {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding-bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href='home.html' class="active">Home</a></li>
+      <li><a href='c.html'>C</a></li>
+      <li><a href='arrays.html'>Arrays</a></li>
+      <li><a href='algorithms.html'>Algorithms</a></li>
+      <li><a href='memory.html'>Memory</a></li>
+    </ul>
+
+    <div class="scale-up-center"><div class="tcon"><h1 class="h1title">Will's Wonderful Website</h1>
+    <img src="download.png" height="80px" length="80px" class="timg"></div></div>
+    <p>This website is my personal online portfolio. The work shown here is was all for the CS50 Harvard course.<br>
+    I had a great time doing the course, it was stimulating, and informative. I feel as if I am now a much more <br>competent programmer.</p>
+    <img src="daveed.jpg" height="180px" length="180px" class="dimg">
+    <p>The content shown is all C. We only did a handful of SQL and Py so there is not much missing.<br>
+    At some point you are going to think <em>"why is most of this site formatted so elements are centered?"</em><br>
+    I have a simple response, it's easy to format like that.</p>
+
+    <p> I will also include my CCT on this page. My CCT is partly
+    this portfolio, but also the server running it.<br> For the CCT I created a socket server in C. By binding onto a port routing traffic to a host, and <br>sending html content I was able to make my own frontend, and backend.</p>
+    <div class="bannerContainer"><h3 class="bannerContainer bannerText">Socket Server in C</h3></div>
+    <div class="gistContainer"><script src="https://gist.github.com/WilliamOrmsby/b4e84195eadae6ffe350008f4b62ca18.js"></script></div>
+  </body>
+</html>
